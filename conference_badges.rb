@@ -3,7 +3,7 @@ def batch_badge_creator(names)
     badge_list = []
     names.each do |name|
         badge = badge_maker(name)
-        badge_list.push badge
+        badge_list.push(badge)
     end
     badge_list
 end
@@ -18,7 +18,7 @@ def assign_rooms(names)
     names.each do |name|
         assignment ="Hello, #{name}! You'll be assigned to room #{room}!"
         room += 1
-        room_list.push assignment
+        room_list.push(assignment)
     end
     room_list
 end
